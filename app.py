@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import requests
 
-similarity=pickle.load(open('similarity.pkl','rb'))
+#similarity=pickle.load(open('similarity.pkl','rb'))
 movies_dict=pickle.load(open('movie_list1.pkl','rb'))
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=6782d53a3bcaa32041da23edc86a5734&language=en-US".format(movie_id)
